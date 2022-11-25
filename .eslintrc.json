@@ -41,7 +41,28 @@
         "tsx": "never",
         "js": "never"
       }
-    ]
+    ],
+    "jsx-a11y/anchor-is-valid": [
+      2,
+      {
+        "components": [
+          "Link"
+        ],
+        "specialLink": [
+          "hrefLeft",
+          "hrefRight"
+        ],
+        "aspects": [
+          "invalidHref",
+          "preferButton"
+        ]
+      }
+    ],
+    "jsx-a11y/label-has-associated-control": [2, {
+      "required": {
+        "some": ["nesting", "id"]
+      }
+    }]
   },
   "settings": {
     "import/resolver": {
